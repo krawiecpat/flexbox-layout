@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header-main {
+    background-color: red;
+    color: white;
+    width: 100%;
+}
+
+.header-main h1 {
+    text-align: center;
+}
+
+.asidelft {
+    background-color: green;
+    color: white;
+    width: 20%;
+}
+
+.asidelft h2 {
+    text-align: center;
+}
+
+.asidergt {
+    background-color: pink;
+    color: white;
+    width: 20%;
+}
+
+.asidergt h2 {
+    text-align: center;
+}
+
+.text {
+    background-color: aqua;
+    color: white;
+    width: 60%;
+    font-size: 3em;
+    text-align: center;
+}
+
+.footer-end {
+    background-color: purple;
+    color: white;
+    width: 100%;
+}
+
+.footer-end h2 {
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .text {
+        width: 70%;
+    }
+
+    .asidelft {
+        width: 100%;
+        height: 250px;
+        order: 1;
+    }
+
+    .asidergt {
+        width: 30%;
+    }
+
+    .footer-end {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        width: 100%;
+    }
+
+    .asidergt {
+        width: 100%;
+        height: 250px;
+        order: 1;
+    }
+}
